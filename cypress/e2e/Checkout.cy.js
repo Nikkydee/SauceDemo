@@ -2,6 +2,7 @@ import HomePage from "../Pages/HomePage";
 import CartPage from "../Pages/CartPage";
 import CheckoutInformationPage from "../Pages/CheckoutInformationPage";
 import ConfirmationPage from "../Pages/ConfirmationPage";
+import LoginPage from "../Pages/LoginPage";
 
 describe('Test add to cart scenarios', () => {
  

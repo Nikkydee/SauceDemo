@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "cypress run",
+    "test-windows": "npm run start && start cypress/reports/html/index.html",
+    "test-mac": "npm run start && open cypress/reports/html/index.html"
   },
   "keywords": [],
   "author": "",
