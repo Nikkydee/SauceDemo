@@ -7,7 +7,7 @@ API Automated Tests & WEb Automation Test
 - Postman
 - Newman runner
 - GitHub
-- Mockawesome HTML Reported
+- Mockawesome HTML Reporter
 - Nodejs
 - Cypress
   
@@ -24,11 +24,12 @@ To get a local copy of the program running, follow these simple steps
 
 ### Install
 - Postman
-- newman runner
-- cypress
+- Newman runner
+- Cypress
+- Newman reporter htmlextra
 
 
-### Setup- Postman runner
+### Setup - Postman runner
 - Open a command line terminal (Git bash preferrably) and navigate to a directory where you would like to save the work folder using cd.
 - Clone the repository with git clone https://github.com/Nikkydee/SauceDemo.git
 - To get the current working tree, git fetch --all, then checkout to "main" branch.
@@ -60,7 +61,7 @@ To get a local copy of the program running, follow these simple steps
 - GitHub: [@Nikkydee](https://github.com/Nikkydee)
 
 ### Observations
-I noticed that the User APIs for pet store were not properly validated. also, generic response data were returned in certain scenarios. This resulted to failure of the edge cases as most of the edge case and negative scenarios could not be properly validated
+I noticed that the User APIs for pet store were not properly validated resulting to failed scenarios with 6 failed tests. also, generic response data were returned in certain scenarios. This resulted to failure of the edge cases as most of the edge case and negative scenarios could not be properly validated
 
 ### Blockers
 
@@ -78,4 +79,4 @@ Contributions, issues, and feature requests are welcome!
 Give a ⭐ if you like this project!
 
 ## Acknowledgments
-- Shout out to [Enyata]() for the opportunity
+- Shout out to [Enyata](https://www.enyata.com/) for the opportunity

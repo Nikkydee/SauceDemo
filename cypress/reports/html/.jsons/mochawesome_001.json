@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-06-10T06:08:53.288Z",
+    "end": "2025-06-10T06:08:55.578Z",
+    "duration": 2290,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "6a67ca15-05b8-4a0f-a8b1-9262d0a63ad0",
+      "title": "",
+      "fullFile": "cypress/e2e/Checkout.cy.js",
+      "file": "cypress/e2e/Checkout.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "ecfcc996-d19e-4949-b812-5d7b7a528355",
+          "title": "Test add to cart scenarios",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Verify that user sis able to checkout",
+              "fullTitle": "Test add to cart scenarios Verify that user sis able to checkout",
+              "timedOut": null,
+              "duration": 2269,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_HomePage.default.clickAddpackBtn();\n_HomePage.default.clickCartBtn();\n_CartPage.default.clickCheckoutBtn();\n_CheckoutInformationPage.default.enterFirstname(\"Adenike\");\n_CheckoutInformationPage.default.enterLastname(\"Adenike\");\n_CheckoutInformationPage.default.enterZipCode(\"100235\");\n_CheckoutInformationPage.default.clickContinueBtn();\n_CheckoutInformationPage.default.clickFinihBtn();\n_ConfirmationPage.default.elements.confirmationTitle().invoke('text').then(text => {\n  expect(text).to.include('Thank you for your order!');\n});",
+              "err": {},
+              "uuid": "daae8986-c8f5-41af-b7e8-f70d347f9977",
+              "parentUUID": "ecfcc996-d19e-4949-b812-5d7b7a528355",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "daae8986-c8f5-41af-b7e8-f70d347f9977"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2269,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/reports/html/.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

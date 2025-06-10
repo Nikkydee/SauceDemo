@@ -1,0 +1,143 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-06-10T06:08:43.564Z",
+    "end": "2025-06-10T06:08:50.125Z",
+    "duration": 6561,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "8500e5cd-5ab3-406e-96ef-678ec1c67b44",
+      "title": "",
+      "fullFile": "cypress/e2e/AddToCart.cy.js",
+      "file": "cypress/e2e/AddToCart.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "2391320c-74d2-471b-a1ed-d74f837f0687",
+          "title": "Test add to cart scenarios",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Verify that the user can add a single item to the cart",
+              "fullTitle": "Test add to cart scenarios Verify that the user can add a single item to the cart",
+              "timedOut": null,
+              "duration": 2985,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_HomePage.default.clickAddpackBtn();\n_HomePage.default.elements.cartBadge().should('contain', 1);\n_HomePage.default.clickCartBtn();\n_CartPage.default.elements.backpackItem().invoke('text').then(text => {\n  expect(text).to.include('Sauce Labs Backpack');\n});",
+              "err": {},
+              "uuid": "46d5d5b9-c9a7-4162-a531-015cd2ca7886",
+              "parentUUID": "2391320c-74d2-471b-a1ed-d74f837f0687",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify that the user can add multiple items to the cart",
+              "fullTitle": "Test add to cart scenarios Verify that the user can add multiple items to the cart",
+              "timedOut": null,
+              "duration": 1511,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_HomePage.default.clickAddpackBtn();\n_HomePage.default.clickCartBtn();\n_CartPage.default.clickContinueShoppingBtn();\n_HomePage.default.clickAddFlashLightBtn();\n_HomePage.default.elements.cartBadge().should('contain', 2);\n_CartPage.default.elements.backpackItem().invoke('text').then(text => {\n  expect(text).to.include('Sauce Labs Backpack');\n});\n_CartPage.default.elements.bikeLightItem().invoke('text').then(text => {\n  expect(text).to.include('Sauce Labs Bike Light');\n});",
+              "err": {},
+              "uuid": "7e2274a3-2270-42c2-ba4a-e69e5489cb21",
+              "parentUUID": "2391320c-74d2-471b-a1ed-d74f837f0687",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify that the user can remove an item from the cart",
+              "fullTitle": "Test add to cart scenarios Verify that the user can remove an item from the cart",
+              "timedOut": null,
+              "duration": 1968,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_HomePage.default.clickAddpackBtn();\n_HomePage.default.clickAddFlashLightBtn();\n_HomePage.default.clickCartBtn();\n_CartPage.default.clickremoveBikeLight();\n_HomePage.default.elements.cartBadge().should('contain', 1);\n_CartPage.default.elements.backpackItem().invoke('text').then(text => {\n  expect(text).to.include('Sauce Labs Backpack');\n});",
+              "err": {},
+              "uuid": "1dc5cba4-5f28-40ae-906d-c0e70a835f49",
+              "parentUUID": "2391320c-74d2-471b-a1ed-d74f837f0687",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "46d5d5b9-c9a7-4162-a531-015cd2ca7886",
+            "7e2274a3-2270-42c2-ba4a-e69e5489cb21",
+            "1dc5cba4-5f28-40ae-906d-c0e70a835f49"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 6464,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/reports/html/.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}
