@@ -5,7 +5,8 @@
   "scripts": {
     "start": "cypress run",
     "test-windows": "npm run start && start cypress/reports/html/index.html",
-    "test-mac": "npm run start && open cypress/reports/html/index.html"
+    "test-mac": "npm run start && open cypress/reports/html/index.html",
+    "api-test": "newman run cypress/api-tests/saucedemo.postman_collection.json -e cypress/api-tests/saucedemo.postman_environment.json -r htmlextra --reporter-htmlextra-title 'SauceDemo API Tests' --reporter-htmlextra-darkTheme true --reporter-htmlextra-showEnvironmentData false --reporter-htmlextra-showFolderDescription false --reporter-htmlextra-showTestScriptData false --reporter-htmlextra-open false"
   },
   "keywords": [],
   "author": "",
@@ -13,6 +14,8 @@
   "description": "",
   "devDependencies": {
     "cypress": "^14.4.1",
-    "cypress-mochawesome-reporter": "^3.8.2"
+    "cypress-mochawesome-reporter": "^3.8.2",
+    "newman": "^6.2.1",
+    "newman-reporter-htmlextra": "^1.23.1"
   }
 }
