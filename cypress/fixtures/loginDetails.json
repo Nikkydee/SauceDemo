@@ -1,0 +1,12 @@
+{
+    "userData": {
+        "invalidUsername": "invalidUser",
+        "invalidPassword": "wrongpassword",
+        "validUsername": "standard_user", 
+        "validPassword": "secret_sauce",
+        "errorMsg": "Epic sadface: Username and password do not match any user in this service",
+        "blankUsernameError": "Epic sadface: Username is required",
+        "blankPasswordError": "Epic sadface: Password is required"
+    }
+
+}
